@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scholarships.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+    <img src="./img/img8.jpg" alt="image">
+
+        <div class="apply_box">
+
+            <form action="./scholarship_process_form.php" method="POST">
+                <div class="head_area">
+                <img src="./img/logo.png" alt="logo" class="logo">
+                <h1 class="sch">
+                    Scholarship Application
+                    <span class="title_small">(ICSS)</span>
+                </h1>
+                <p class="content">Established in 2021, The Integrated Centre for Sustainable Systems (ICSS) is a non-profit company leveraging on research, technology, 
+                    development and capacity building to develop and extend management tools and strategies for developing sustainable integrated systems 
+                    across agriculture, education, environment and health sectors. <br>
+                    The Centre has taken a smart sector-integration approach to help communities in Africa and across the world identify and solve the challenges that they are facing in these sectors; making the SDGs more cost-effective, efficient and sustainable in the long term. 
+                    <h3>Mission</h3> 
+                    Our main goal is to build integrated sustainable systems across the sectors of agriculture, education, environment and health.
+                    
+                   <h3>Vision</h3> 
+                    To become a champion in developing integrated sustainable systems that solve the challenges facing the agriculture, environment, education and health sectors globally.
+                    <h3>Mission Statement</h3> 
+                    Engage. Empower. Enrich
+                    </p>
+                </div>
+                <div class="personal_details">
+                    <div class="form_container">
+
+                        <div class="personal_info">
+                            <h2>Personal Information*</h2>
+                            <div class="form_control">
+                                <label for="firstName" >First Name*</label>
+                                <input type="text" placeholder="first name" id = "firstName" name = "firstName" required>
+                            </div>
+                            <div class="form_control">
+                                <label for="secondName">Surname Name*</label>
+                                <input type="text" placeholder="surname" id="secondName" name="secondName" required>
+                            </div>
+                            <div class="form_control">
+                                <label for="email">Email*</label>
+                                <input type="email" placeholder="johndoe@gmail.com" id="email" name="email" required>
+                            </div>
+                            <div class="form_control">
+                                <label for="phoneNo">Phone*<number></number></label>
+                                <input type="number" placeholder="+254700000000" id="phoneNo" name="phoneNo" required>
+                            </div>
+                            <div class="form_control">
+                                <label for="guardian">Guardian(If minor)</label>
+                                <input type="text" placeholder="guardian" id="guardian" name="guardian">
+                            </div>
+                            <div class="form_control">
+                                <label for="guardianEmail">Guardian's Email(Optional)</label>
+                                <input type="email" placeholder="johndoe@gmail.com" id="guardianEmail" name="guardianEmail">
+                            </div>
+                            <div class="form_control">
+                                <label for="guardianPhoneNo">Guardian's Phone number(Optional)</label>
+                                <input type="number" placeholder="+254700000000" id="guardianPhoneNo" name="guardianPhoneNo" >
+                            </div>
+                            <div class="form_control">
+                                
+                               <label>Gender*</label> 
+                                <label>
+                                    <input type="radio" name="gender" value="m" checked>
+                                    Male
+                                </label>
+                                
+                                <label>
+                                    <input type="radio" name="gender" value="f" required>
+                                    Female
+                                </label>
+                               
+                                <label>
+                                    <input type="radio" name="gender" value="o" required>
+                                    Other
+                                </label>
+                              
+                                <label>
+                                    <input type="radio" name="gender" value="n" required>
+                                    Prefer not to mention
+                                </label>
+                               
+                            </div>
+                            <!-- <div class="form_control">
+                                <label>Gender</label>
+                                <select required>
+                                    <option disabled selected>Select gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Others</option>
+                                </select> </div>-->
+
+                            <div class="form_control">
+                                <label for="OtherGender">If Other, <specify></specify></label>
+                                <input type="text" placeholder="other" id="OtherGender" name="OtherGender">
+                            </div>
+                            <div class="form_control">
+                                <label for="DOB">Date of Birth*</label>
+                                <input type="date" placeholder="Enter birth date" id="DOB" name="DOB" required >
+                            </div>
+                        </div>
+                        <div class="address_details">
+
+
+                            <h2>Address Details*</h2>
+
+
+                            <div class="form_control">
+                                <label for="country">Country*</label>
+                                <select  id="country" name="country" required>
+                                <option disabled selected>e.g Kenya</option>
+                                    <option value="Burundi">Burundi</option>
+                                    <option value="DRC">DRC</option>
+                                    <option value="Ethipia">Ethipia</option>
+                                    <option value="Kenya">Kenya</option>
+                                    <option value="Rwanda">Rwanda</option>
+                                    <option value="Somalia">Somalia</option>
+                                    <option value="Tanzania">Tanzania</option>
+                                    <option value="Uganda">Uganda</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="county">County*</label>
+                                <select  id="county" name="county" required>
+                                <option disabled selected>e.g Nairobi</option>
+                                    <option value="Baringo">Baringo</option>
+                                    <option value="Nairobi">Nairobi</option>
+                                    <option value="Kakamega">Kakamega</option>
+                                    <option value="Kisii">Kisii</option>
+                                    <option value="Mombasa">Mombasa</option>
+                                    <option value="Lamu">Lamu</option>
+                                    <option value="Kilifi">Kilifi</option>
+                                    <option value="Taita Taveta">Taita Taveta</option>
+                                    <option value="Nyamira">Nyamira</option>
+                                    <option value="Busia">Busia</option>
+                                    <option value="Vihiga">Vihiga</option>
+                                    <option value="Bungoma">Bungoma</option>
+                                    <option value="Trans Nzoia">Trans Nzoia</option>
+                                    <option value="Uasin Gishu">Uasin Gishu</option>
+                                    <option value="Nakuru">Nakuru</option>
+                                </select>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="Sub_county">Sub County^</label>
+                                <input type="text" placeholder="Sub County" id="Sub-county" name="Sub_county" required>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="ward">Ward*</label>
+                                <input type="text" placeholder="Ward" id="ward" name="ward" required>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="postalCode">Postal Code*</label>
+                                <input type="number" placeholder="eg 00100" id="postalCode"  name="postalCode" required >
+                            </div>
+                            <div class="form_control">
+                                <label for="postalAdd">Postal Address*</label>
+                                <input type="number" placeholder="eg 1234 - 50100" id="postalAdd" name="postalAdd" required>
+                            </div>
+
+                        </div>
+                        <div class="education_background">
+                            <h2>Education Background*</h2>
+                            <div class="form_control">
+                                <label for="lvl_education">Highest level of education*</label>
+                                <select id="lvl_education" name="lvl_education" required>
+                                    <option disabled selected>Select level of Education</option>
+                                    <option value="Primary School">Primary School</option>
+                                    <option value="High school">High school</option>
+                                    <option value="Tertiary Institution">Tertiary Institution</option>
+                                    <option value="Diploma">Diploma</option>
+                                    <option value="Bachelor's">Bachelor's</option>
+                                    <option value="Post Graduate">Post Graduate</option>
+                                    <option value="Doctorate">Doctorate</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="institution">Institution*</label>
+                                <input type="text" placeholder="Enter institution name" id="institution" name="institution" required>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="program">Program*</label>
+                                <input type="text" placeholder="Program Studied" id="program" name="program"> 
+                            </div>
+
+                            <div class="form_control">
+                                <label for="location">Location*</label>
+                                <input type="text" placeholder="Country" id="location" name="location" >
+                            </div>
+
+                            <div class="form_control">
+                                <label for="startDate">Starting Date*</label>
+                                <input type="date" placeholder="Enter your starting date" id="startDate" name="startDate">
+                            </div>
+
+                            <div class="form_control">
+                                <label for="endDate">Completion Date*</label>
+                                <input type="date" placeholder="Enter the completion date" id="endDate" name="endDate" >
+                            </div>
+                            <div class="form_control">
+                                <label for="file">Upload your Academic Certificates*</label>
+                                <input type="file" name="file" id="file" required>
+                            </div>
+                            <div class="form_control">
+                                <label for="file">Upload an essay on the mortivation to apply*</label>
+                                <input type="file" name="file_essay" id="file" required>
+                            </div>
+                        </div>
+
+                        <div class="scholarships">
+                            <h2>Scholarships*</h2>
+                            <div class="form_control">
+                                <label for="Scholarship_type">Scholarship type*</label>
+                                <select id="Scholarship_type" name="Scholarship_type" required>
+                                    <option disabled selected>Select Scholarship to apply for</option>
+                                    <option value="Primary School">Primary School</option>
+                                    <option value="High school">High school</option>
+                                    <option value="Tertiary Institution">Tertiary Institution</option>
+                                    <option value="Diploma">Diploma</option>
+                                    <option value="Bachelor's">Bachelor's</option>
+                                    <option value="Post Graduate">Post Graduate</option>
+                                    <option value="Doctorate">Doctorate</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+
+                            <div class="textarea_control">
+                                <label for="sustainability">What do you understand about sustainability?(300 words max)*</label>
+                                <textarea name="sustainability" id="sustainability" cols="40" rows="5"
+                                    required></textarea>
+                            </div>
+                            <div class="textarea_control">
+                                <label for="sustainability2">What inspired you to apply for this scholarship?(300 words max)*</label>
+                                <textarea name="sustainability2" id="sustainability2" cols="40" rows="5"
+                                    required></textarea>
+                            </div>
+                            <div class="textarea_control">
+                                <label for="sustainability3">Highlight some of the projects you have been involved in
+                                    about sustainability(300 words max)*</label>
+                                <textarea name="sustainability3" id="sustainability3" cols="40" rows="5"
+                                    required></textarea>
+                            </div>
+                            <div class="textarea_control">
+                                <label for="sustainability4">What do you anticipate to achieve with this
+                                    scholarship?(300 words max)*</label>
+                                <textarea name="sustainability4" id="sustainability4" cols="40" rows="5"
+                                    required></textarea>
+                            </div>
+                            <div class="textarea_control">
+                                <label for="sustainability5">Write about climatic challenges in your area(300 words max)*</label>
+                                <textarea name="sustainability5" id="sustainability5" cols="40" rows="5"
+                                    required></textarea>
+                            </div>
+                            <div class="textarea_control">
+                                <label for="sustainability6">Where did you learn this scholarship from?* <br></label>
+                                <select id="sustainability6" name="sustainability6" required >
+                                    <option disabled selected></option>
+                                    <option value="linkedin">linkedin</option>
+                                    <option value="Newspaper">Newspaper</option>
+                                    <option value="Online">Online</option>
+                                    <option value="Social Media">Social Media</option>
+                                    <option value="Television">Television</option>
+                                    <option value="Scholarship sites">Scholarship sites</option>
+                                </select>
+                            </div>
+                            <div class="textarea_control">
+                                <label>
+                                    <input type="checkbox" name="terms" value ="agreed" required>
+                                    I agree to the terms and Conditions*
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="button_container">
+                    <button type="submit">Apply Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  
+</body>
+
+
+</html>

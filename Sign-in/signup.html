@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./sign-up-style.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="./validation.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <video autoplay loop muted plays-inline class="video">
+            <source src="./vid/Web vid.mp4" type="video/mp4">
+        </video>
+        <div class="form-box">
+            <h1 id="title">Register here</h1>
+            <form action="./signup_process.php" method="post" id="signup" novalidate>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Full Name" name="name" id="name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" name="email" id="email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password" id="password">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Confirm password" name="password_confirmation" id="password_confirmation">
+                    </div>
+                    <p class="cont">If you have an account <a href="./login.php">Click Here</a> to log in.</p>
+                </div>
+                <div class="btn-field">
+                    <button type="submit" id="signupBtn">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
