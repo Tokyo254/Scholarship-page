@@ -1,4 +1,5 @@
 # Scholarship-page
-A responsive scholarship website with a login and sign up page
-This web application is built using html, css and javascript.
 
+## About
+
+A responsive scholarship website prototype built with HTML, CSS, and JavaScript, with login and registration screens.
